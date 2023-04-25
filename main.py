@@ -25,7 +25,7 @@ def Vika(df, min_age, max_age, sex):
         sex = 'male'
     else:
         sex = 'female'
-    young_survived = df[df['Age'] < max_age][df['Age'] >= min_age][df['Sex'] == sex]
+    young_survived = df[df['Age'] < max_age]
     out_table = df.young_survived.Age
     print(young_survived.Age, young_survived.Sex, young_survived.Name)
 
