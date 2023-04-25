@@ -7,9 +7,15 @@ import streamlit as st
 df = pd.read_csv("data.csv")
 
 
-def erik(df):
+def erik(df, sex, isAlived):
     # Вывести имя, возраст, класс билета пассажиров, выбрав пол и спасен/нет.
-    pass
+    if sex == 0:
+        sex = 'male'
+    else:
+        sex = 'female'
+    sex_df = df[df['Sex'] == sex]
+    aliv_df = sex_df[df['Survived'] == isAlived]
+    return aliv_df
 
 
 def Vika(df, min_age, max_age, sex):
