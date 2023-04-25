@@ -5,12 +5,16 @@ import seaborn as sns
 import streamlit as st
 
 df = pd.read_csv("data.csv")
-# Вывести имя и возраст спасенных детей, указав пол и возраст (от 0 до 18).
+
 def erik(df):
-    pass
 # Вывести имя, возраст, класс билета пассажиров, выбрав пол и спасен/нет.
-def Vika(df):
     pass
+
+
+def Vika(df):
+# Вывести имя и возраст спасенных детей, указав пол и возраст (от 0 до 18).
+    a = df.groupby('Name')['Age'].count()
+    print(a)
 
 if __name__ == "__main__":
     erik(df)
