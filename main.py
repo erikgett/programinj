@@ -16,11 +16,8 @@ def Vika(df, min_age, max_age, sex):
     if sex == 0: sex = 'male'
     else: sex = 'female'
     young_survived = df[df['Age'] < max_age]
-    young_survived = young_survived[df['Age'] > min_age]
-    young_survived = young_survived[df['Sex'] == sex]
     out = young_survived[["Name", "Age", "Sex"]]
     return out
-
 
 if __name__ == "__main__":
     erik(df)
