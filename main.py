@@ -15,7 +15,8 @@ def erik(df, sex, isAlived):
         sex = 'female'
     sex_df = df[df['Sex'] == sex]
     aliv_df = sex_df[df['Survived'] == isAlived]
-    return aliv_df
+    out = aliv_df[["Name", "Age", "Pclass"]]
+    return out
 
 
 def Vika(df, min_age, max_age, sex):
