@@ -10,7 +10,7 @@ df = pd.DataFrame({
              "Heikkinen, Miss. Laina", "Bonnell, Miss. Elizabeth"],
     'Sex': [0, 1, 0, 1],
     'Age': [14, 16, 12, 26],
-    'SibSp': [22, 38, 35, 37],
+    'SibSp': [0, 0, 0, 0],
     'Parch': [0, 0, 1, 1],
     'Ticket': [4, 6, 7, 8],
     'Fare': [4, 6, 7, 8],
