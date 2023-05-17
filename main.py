@@ -1,6 +1,8 @@
 import pandas as pd
 
 
+
+
 df = pd.read_csv("data.csv")
 
 
@@ -22,12 +24,12 @@ def Vika(df, min_age, max_age, sex):
         sex = 'male'
     else:
         sex = 'female'
-    young_survived = df[df['Age'] < max_age]
-    old_surv = young_survived[young_survived['Age'] > min_age]
+    young_survived = df[df['Age'] <= max_age]
+    old_surv = young_survived[young_survived['Age'] >= min_age]
     sex = old_surv[old_surv['Sex'] == sex]
     return sex
 
 
 if __name__ == "__main__":
-    erik(df)
+    #erik(df)
     Vika(df, 5, 10, 0)
