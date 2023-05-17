@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-from main import erik
+from main import erik, Vika
 
 # streamlit run C:\Users\erik_\PycharmProjects\programinj\interface.py - команда для локального запуска
 
@@ -17,8 +17,9 @@ if sex_V == 'Мужской':
 else:
     bool_Sex = 1
 
-# Vika_table = Vika(df, child_age_V[0], child_age_V[1], bool_Sex)
-# st.table(Vika_table)
+Vika_table = Vika(df, child_age_V[0], child_age_V[1], bool_Sex)
+st.table(Vika_table)
+
 st.table(df.head(5))
 st.write("# Вывести имя, возраст, класс билета пассажиров, выбрав пол и спасен/нет. Задача Эрика")
 
