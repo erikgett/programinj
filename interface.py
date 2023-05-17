@@ -1,7 +1,7 @@
-import streamlit as st
 import pandas as pd
+import streamlit as st
 
-from main import Vika, erik
+from main import erik
 
 # streamlit run C:\Users\erik_\PycharmProjects\programinj\interface.py - команда для локального запуска
 

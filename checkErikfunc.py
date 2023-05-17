@@ -1,7 +1,6 @@
 from main import erik
 import pandas as pd
 
-
 df = pd.DataFrame({
     'PassengerId': [1, 2, 3, 4],
     'Survived': [0, 1, 1, 1],
@@ -30,6 +29,7 @@ df2 = pd.DataFrame({
     'Fare': [4, 6, 7, 8],
     'Cabin': [4, 6, 7, 8],
     'Embarked': [4, 6, 7, 8]})
+
 
 def test_erik_func():
     assert (erik(df, 1, 1).equals(erik(df, 1, 1)))

@@ -1,8 +1,5 @@
 import pandas as pd
 
-
-
-
 df = pd.read_csv("data.csv")
 
 
@@ -31,5 +28,5 @@ def Vika(df, min_age, max_age, sex):
 
 
 if __name__ == "__main__":
-    #erik(df)
+    # erik(df)
     Vika(df, 5, 10, 0)
