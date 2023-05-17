@@ -17,9 +17,8 @@ if sex_V == 'Мужской':
 else:
     bool_Sex = 1
 
-# Vika_table = Vika(df, child_age_V[0], child_age_V[1], bool_Sex)
-# st.table(Vika_table)
-st.table(df.head(5))
+Vika_table = Vika(df, child_age_V[0], child_age_V[1], bool_Sex)
+st.table(Vika_table)
 st.write("# Вывести имя, возраст, класс билета пассажиров, выбрав пол и спасен/нет. Задача Эрика")
 
 is_suvrived_E = st.radio("Живых вам или мертвых", ('Живых', 'Мертвых'))

@@ -26,8 +26,9 @@ def Vika(df, min_age, max_age, sex):
     else:
         sex = 'female'
     young_survived = df[df['Age'] < max_age]
-    out_table = df.young_survived.Age
-    print(young_survived.Age, young_survived.Sex, young_survived.Name)
+    old_surv = young_survived[young_survived['Age'] > min_age]
+    sex = old_surv[old_surv['Sex'] == sex]
+    return sex
 
 
 if __name__ == "__main__":
